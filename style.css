@@ -1,0 +1,119 @@
+:root{
+    --main-bg:hsl(217, 54%, 11%);
+    --card-bg:hsl(216, 50%, 16%);
+    --clr-line:hsl(215, 32%, 27%);
+
+    --clr-white:hsl(0, 0%, 100%);
+
+    --soft-blue:hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--main-bg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+p{
+    font-size: 18px;
+}
+
+.card{
+    width: 80%;
+    max-width: 1125px;
+    margin-inline: auto;
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.card > img{
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+h1{
+    color: var(--clr-white);
+    font-size: 25px;
+    margin-block: 1rem;
+}
+
+h1+p{
+    color: var(--soft-blue);
+    font-weight: 300;   
+}
+
+.price-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 1rem;
+}
+
+.price-date p:first-child{
+    color: var(--cyan);    
+    font-weight: 300;
+    margin-left: 0.2rem;
+}
+
+.price-date p:last-child{
+    color: var(--soft-blue);
+    font-weight: 300;
+    margin-left: 0.2rem;
+}
+
+hr{
+    margin-block: 1rem;
+    border:solid 1px var(--clr-line);
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.card-footer > img{
+    max-width: 16%;
+    display: block;
+    border: 1px solid var(--clr-white);
+    border-radius: 100%;
+
+}
+
+.card-footer h3{
+    color: var(--soft-blue);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-footer h3 span{
+    color: var(--clr-white);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 0.2rem;
+}
+
+
+@media (min-width : 375px){
+    .card{
+        width: 80%;
+        max-width: 500px;
+        padding: 1.5rem;
+        
+    }
+
+}
